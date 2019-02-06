@@ -90,8 +90,6 @@ body{
     border-color: #dddddd;
 }
 
-
-
 .contact{
     border-style: solid;
     border-width: 0px 0px 3px 0px;
@@ -103,7 +101,7 @@ body{
 
 .bodycontact{
     width: 920px;
-    height: 450px;
+    height: 370px;
     background-color: #ffffff;
     padding:20px;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
@@ -117,6 +115,14 @@ input{
     color: #4aaaa5
 }
 
+#message{
+    height: 100px;
+    resize: both;
+    overflow: auto;
+    width: 99%;
+    color: #4aaaa5
+}
+
 #submit{
     margin-top:10px;
     width:60px;
@@ -124,12 +130,6 @@ input{
     background-color: #4aaaa5;
     height: 30px;
     width:  80px;
-}
-
-#message{
-    height: 100px;
-    resize: both;
-    overflow: auto;
 }
 
 #namename{
@@ -146,7 +146,7 @@ input{
 
 .bodyport{
     width: 920px;
-    height: 570px;
+    height: 670px;
     background-color: #ffffff;
     padding:20px;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
@@ -163,28 +163,81 @@ input{
 } 
 
 #hang{
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     padding: 20px;
+    float: left;
+}
+
+#hangtitle{
+    position: absolute;
+    top: 450px;
+    left: 240px;
+    background-color: #4aaaa5;
+    height: 40px;
+    width: 250px;
+    padding: 20px 0px 0px 0px;
+    color: #ffffff;
+    text-align: center;
 }
 
 #rpg{
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     padding: 20px;
+    float: left;
+}
+
+#rpgtitle{
+    position: absolute;
+    top: 450px;
+    left: 530px;
+    background-color: #4aaaa5;
+    height: 40px;
+    width: 250px;
+    padding: 20px 0px 0px 0px;
+    color: #ffffff;
+    text-align: center;
 }
 
 #trivia{
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     padding: 20px;
+    float: left;
+}
+
+#triviatitle{
+    position: absolute;
+    top: 450px;
+    left: 820px;
+    background-color: #4aaaa5;
+    height: 40px;
+    width: 250px;
+    padding: 20px 0px 0px 0px;
+    color: #ffffff;
+    text-align: center;
 }
 
 #rps{
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     padding: 20px;
+    float: left;
 }
+
+#rpstitle{
+    position: absolute;
+    top: 750px;
+    left: 240px;
+    background-color: #4aaaa5;
+    height: 40px;
+    width: 250px;
+    padding: 20px 0px 0px 0px;
+    color: #ffffff;
+    text-align: center;
+}
+
 
 .footbar{
     position: fixed;
