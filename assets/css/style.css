@@ -27,6 +27,7 @@
     width:100%;
     height: 100px;
     text-decoration: none;
+    z-index: 5;
 }
 
 
@@ -45,6 +46,20 @@
     padding: 0px 0px 0px 20px;
     border-color: #dddddd;
     margin-right: -50%;
+}
+
+#project{
+    float:right;
+    /* position: fixed; */
+    /* left: 930px; */
+    top:50px;
+    text-decoration: none;
+    color:#777777;
+    border-style: solid;
+    border-width: 0px 0px 0px 1px;
+    padding: 0px 0px 0px 20px;
+    /* margin-right: -5%; */
+    border-color: #dddddd;
 }
 
 #portfolio{
@@ -90,9 +105,6 @@ body{
     background-image: url("../../../Basic-Portfolio/assets/images/wheat.png")
 }
 
-
-
-
 .body{
     /* can not get it to center on a larger screen, online line on the right side*/
     width: 920px;
@@ -103,9 +115,6 @@ body{
     color: #777777;
     font-size: 16px;
 }
-
-
-
 
 .about{
     border-style: solid;
@@ -168,6 +177,16 @@ input{
     padding:5px 0px 0px 0px
 }
 
+.bodyproject{
+    width: 920px;
+    height: 370px;
+    background-color: #ffffff;
+    padding:20px;
+    margin-bottom: 50px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+}
+
 .bodyport{
     width: 920px;
     height: 670px;
@@ -177,6 +196,14 @@ input{
     color: #777777;
 }
 
+.projecttitle{
+    border-style: solid;
+    border-width: 0px 0px 3px 0px;
+    padding: 0px 0px 20px 0px;
+    border-color: #dddddd;
+    margin-bottom: 20px;
+} 
+
 .portfoliotitle{
     border-style: solid;
     border-width: 0px 0px 3px 0px;
@@ -185,14 +212,15 @@ input{
     margin-bottom: 20px;
 } 
 
-#hang{
+#feeling-hungry{
     height: 250px;
     width: 250px;
     padding: 20px;
     float: left;
+
 }
 
-#hangtitle{
+#hungrytitle{
     position: absolute;
     top: 410px;
     left: 240px;
@@ -204,18 +232,40 @@ input{
     color: #ffffff;
     text-align: center;
     font-family: 'Exo 2', sans-serif;
+    z-index: 2;
 }
 
-#rpg{
+#gem{
     height: 250px;
     width: 250px;
     padding: 20px;
     float: left;
 }
 
-#rpgtitle{
+#gemtitle{
     position: absolute;
-    top: 410px;
+    top: 850px;
+    left: 240px;
+    background-color: #4aaaa5;
+    text-decoration: none;
+    height: 60px;
+    width: 210px;
+    padding: 20px 0px 0px 0px;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Exo 2', sans-serif;
+}
+
+#psychic{
+    height: 250px;
+    width: 250px;
+    padding: 20px;
+    float: left;
+}
+
+#psychictitle{
+    position: absolute;
+    top: 850px;
     left: 490px;
     background-color: #4aaaa5;
     height: 60px;
@@ -235,7 +285,7 @@ input{
 
 #triviatitle{
     position: absolute;
-    top: 410px;
+    top: 850px;
     left: 740px;
     background-color: #4aaaa5;
     height: 60px;
@@ -246,16 +296,17 @@ input{
     font-family: 'Exo 2', sans-serif;
 }
 
-#rps{
+#train{
     height: 250px;
     width: 250px;
     padding: 20px;
     float: left;
+    z-index: 1;
 }
 
-#rpstitle{
+#traintitle{
     position: absolute;
-    top: 670px;
+    top: 1090px;
     left: 240px;
     background-color: #4aaaa5;
     height: 60px;
@@ -264,8 +315,30 @@ input{
     color: #ffffff;
     text-align: center;
     font-family: 'Exo 2', sans-serif;
+    z-index: 2;
 }
 
+#gif{
+    height: 250px;
+    width: 250px;
+    padding: 20px;
+    float: left;
+    z-index: 1;
+}
+
+#giftitle{
+    position: absolute;
+    top: 1090px;
+    left: 490px;
+    background-color: #4aaaa5;
+    height: 60px;
+    width: 210px;
+    padding: 20px 0px 0px 0px;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Exo 2', sans-serif;
+    z-index: 2;
+}
 
 .footbar{
     position: fixed;
@@ -323,6 +396,15 @@ input{
 
     }
     
+    #project{
+        float:right;
+        /* position: fixed; */
+        /* left: 0px; */
+        top:50px;
+        margin-right: -25%;
+
+    }
+
     #portfolio{
         float:right;
         /* position: fixed; */
@@ -350,18 +432,24 @@ input{
         height:100%;
     }
 
+    .bodyproject{
+        /* width:460px; */
+        width:100%;
+        height:470px;
+    }
+
     .bodyport{
         /* width:460px; */
         width:100%;
-        height:1500px;
+        height:1860px;
     }
 
-    #hang{
+    #feeling-hungry{
         height: 350px;
         width: 100%;
     }
 
-    #hangtitle{
+    #hungrytitle{
         width:30%;
         position: absolute;
         top: 500px;
@@ -369,15 +457,28 @@ input{
         z-index: 2;
     }
 
-    #rpg{
+    #gem{
+        height: 350px;
+        width: 100%;
+    }
+
+    #gemtitle{
+        width:30%;
+        position: absolute;
+        top: 1040px;
+        left: 140px;
+        z-index: 2;
+    }
+
+    #psychic{
         height: 350px;
         width: 100%; 
     }
 
-    #rpgtitle{
+    #psychictitle{
         width:30%;
         position: absolute;
-        top: 850px;
+        top: 1390px;
         left: 140px;
         z-index: 2;
     }
@@ -390,24 +491,39 @@ input{
     #triviatitle{
         width:30%;
         position: absolute;
-        top: 1200px;
+        top: 1740px;
         left: 140px;
         z-index: 2;
     }
 
-    #rps{
+    #train{
         height: 350px;
         width: 100%;
     }
 
-    #rpstitle{
+    #traintitle{
         width:30%;
         position: absolute;
-        top: 1550px;
+        top: 2090px;
+        left: 140px;
+        z-index: 2;
+    }
+
+    #gif{
+        height: 350px;
+        width: 100%;
+    }
+
+    #giftitle{
+        width:30%;
+        position: absolute;
+        top: 2440px;
         left: 140px;
         z-index: 2;
     }
 }
+
+
 
 @media screen and (max-width: 640px) {
     body{
@@ -439,6 +555,15 @@ input{
         color: #ffffff
     }
     
+    #project{
+        /* float:right; */
+        position: fixed;
+        left: 250px;
+        top:50px;
+        /* margin-right: -25%; */
+        color: #ffffff
+    }
+
     #portfolio{
         /* float:right; */
         position: fixed;
@@ -472,25 +597,40 @@ input{
     }
     .about{
         text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-        }
+    }
+
+    .bodyproject{
+        /* width:460px; */
+        width:100%;
+        height:360px;
+        background-color: #777777;
+    }
+
     .bodyport{
         /* width:460px; */
         width:100%;
-        height:1200px;
+        height:1360px;
         background-color: #777777;
     }
+
     .bodycontact{
         /* width:460px; */
         width:100%;
         height:100%;
         background-color: #777777;
     }
-    #hang{
+
+    #feeling-hungry{
         width:100%;
         height: 250px;
     }
 
-    #rpg{
+    #gem{
+        width:100%;
+        height: 250px;
+    }
+
+    #psychic{
         width:100%;
         height: 250px;
     }
@@ -500,23 +640,36 @@ input{
         height: 250px;
     }
 
-    #rps{
+    #train{
         width:100%;
         height: 250px; 
     }
 
-    #hangtitle{
+    #gif{
+        width:100%;
+        height: 250px; 
+    }
+
+    #hungrytitle{
         width:30%;
         position: absolute;
-        top: 420px;
+        top: 410px;
         left: 140px;
         z-index: 2;
     }
 
-    #rpgtitle{
+    #gemtitle{
         width:30%;
         position: absolute;
-        top: 670px;
+        top: 820px;
+        left: 140px;
+        z-index: 2;
+    }
+
+    #psychictitle{
+        width:30%;
+        position: absolute;
+        top: 1070px;
         left: 140px;
         z-index: 2;
     }
@@ -525,34 +678,50 @@ input{
     #triviatitle{
         width:30%;
         position: absolute;
-        top: 920px;
+        top: 1320px;
         left: 140px;
         z-index: 2;
     }
 
-    #rpstitle{
+    #traintitle{
         width:30%;
         position: absolute;
-        top: 1170px;
+        top: 1570px;
         left: 140px;
         z-index: 2;
     }
+
+    #giftitle{
+        width:30%;
+        position: absolute;
+        top: 1820px;
+        left: 140px;
+        z-index: 2;
+    }
+
+    /* #gemtitle{
+        width:30%;
+        position: absolute;
+        top: 370px;
+        left: 140px;
+        z-index: 2;
+    } */
 
     
 
 }
 
 
-/* @keyframes example { */
-    /* from {background-color: red;} */
-    /* to {background-color: yellow;} */
-    /* } */
-    /*  */
+/* @keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+    }
+    
     /* The element to apply the animation to */
-    /* div { */ */
+    /* div { */
     /* width: 100px; */
     /* height: 100px; */
     /* background-color: red; */
     /* animation-name: example; */
-    /* animation-duration: 4s; */
-    }
+    /* animation-duration: 4s; */ */
+    /* } */ */
