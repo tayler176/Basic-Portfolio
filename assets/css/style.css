@@ -345,7 +345,8 @@ input{
     bottom: 0;
     left:0;
     background-color: #777777;
-    height: 50px;
+    height: 60px;
+    /* height: 150px; */
     width: 100%;
     text-align: center;
     padding: 10px 0px 0px 0px;
@@ -353,14 +354,20 @@ input{
     border-top: 10px;
     z-index: 2;
     color: #dddddd;
+    
 }   
+
+#links{
+    color:#ffffff;
+    padding: 10px;
+}
 
 .footborder{
     position: fixed;
     bottom: 0;
     left:0;
     background-color: #4aaaa5;
-    height: 60px;
+    height: 70px;
     width: 100%;
     text-align: center;
     padding: 10px 0px 0px 0px;
